@@ -15,6 +15,7 @@ public class Statement {
     private final List<StatementItem> statementItems = new LinkedList<>();
 
     /**
+     * Append occurrence content
      * @param operation : The operation object
      * @param currentBalance : The current balance object
      */
@@ -23,19 +24,21 @@ public class Statement {
     }
 
     /**
+     * Print the line
      * @param printer : The print stream object
      */
-    public void printTo(PrintStream printer) {
+    public void printProcess(PrintStream printer) {
         printer.println(Helper.HEADER);
         printStatementOccurrence(printer);
     }
 
     /**
+     * Print the statement occurrence
      * @param printer : The print stream object
      */
     private void printStatementOccurrence(PrintStream printer) {
         for (StatementItem statementItem : statementItems) {
-            statementItem.printTo(printer);
+            statementItem.printProcess(printer);
         }
     }
 }

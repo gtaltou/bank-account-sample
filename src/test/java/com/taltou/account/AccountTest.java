@@ -52,7 +52,7 @@ public class AccountTest {
     test_print_statement() {
         PrintStream printer = System.out;
         account.printStatement(printer);
-        verify(aStatement).printTo(printer);
+        verify(aStatement).printProcess(printer);
     }
 
     private Amount currentBalanceEqualsTo(Amount amount) {

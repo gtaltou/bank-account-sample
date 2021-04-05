@@ -30,7 +30,7 @@ public class StatementItemTest {
                         .with(date("15/03/2021")).build(),
                 newAmount(4000));
 
-        statementItem.printTo(printer);
+        statementItem.printProcess(printer);
 
         verify(printer).println("15/03/2021 || 4000,00  ||          || 4000,00");
     }
@@ -43,7 +43,7 @@ public class StatementItemTest {
                         .with(date("15/03/2021")).build(),
                 newAmount(-500));
 
-        statementItem.printTo(printer);
+        statementItem.printProcess(printer);
 
         verify(printer).println("15/03/2021 ||          || 500,00   || -500,00");
     }

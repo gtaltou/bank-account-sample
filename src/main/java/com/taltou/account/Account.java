@@ -41,7 +41,7 @@ public class Account {
      * @param printer : The printer
      */
     public void printStatement(PrintStream printer) {
-        statement.printTo(printer);
+        statement.printProcess(printer);
     }
 
     /**

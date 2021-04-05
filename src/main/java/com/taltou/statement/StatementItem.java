@@ -15,8 +15,12 @@ public class StatementItem {
         this.currentBalance = currentBalance;
     }
 
-    public void printTo(PrintStream printer) {
-        this.operation.printTo(printer, currentBalance);
+    /**
+     * Print the process
+     * @param printer : The print stream object
+     */
+    public void printProcess(PrintStream printer) {
+        this.operation.printProcess(printer, currentBalance);
     }
 
 }

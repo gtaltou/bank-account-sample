@@ -26,7 +26,7 @@ public class OperationTest {
     test_print_credit_operation() {
         Operation operation = new Operation(Amount.newAmount(3000), Helper.date("01/03/2021"));
 
-        operation.printTo(printer, Amount.newAmount(3000));
+        operation.printProcess(printer, Amount.newAmount(3000));
 
         verify(printer).println("01/03/2021 || 3000,00  ||          || 3000,00");
     }
@@ -35,7 +35,7 @@ public class OperationTest {
     test_print_operation_debit() {
         Operation operation = new Operation(Amount.newAmount(-2000), Helper.date("30/03/2021"));
 
-        operation.printTo(printer, Amount.newAmount(-2000));
+        operation.printProcess(printer, Amount.newAmount(-2000));
 
         verify(printer).println("30/03/2021 ||          || 2000,00  || -2000,00");
     }

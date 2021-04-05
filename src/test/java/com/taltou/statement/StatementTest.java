@@ -28,7 +28,7 @@ public class StatementTest {
     @Test
     public void
     test_print_statement_header() {
-        statement.printTo(printer);
+        statement.printProcess(printer);
 
         verify(printer).println(Helper.HEADER);
     }

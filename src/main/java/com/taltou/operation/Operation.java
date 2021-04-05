@@ -24,6 +24,7 @@ public class Operation {
     }
 
     /**
+     * Compute the balance after operation
      * @param currentBalance ; The current balance
      * @return ; The return value
      */
@@ -32,10 +33,11 @@ public class Operation {
     }
 
     /**
+     * Print the Process
      * @param printer : The print stream
      * @param currentBalance : The current balance
      */
-    public void printTo(PrintStream printer, Amount currentBalance) {
+    public void printProcess(PrintStream printer, Amount currentBalance) {
         StringBuilder builder = new StringBuilder();
         appendDateTo(builder);
         computeValueTo(builder);
@@ -44,6 +46,7 @@ public class Operation {
     }
 
     /**
+     * Append the current balance
      * @param builder : The string builder
      * @param currentBalance ; The current balance
      */
@@ -53,6 +56,7 @@ public class Operation {
     }
 
     /**
+     * Compute the value
      * @param builder : The string builder
      */
     private void computeValueTo(StringBuilder builder) {
@@ -64,6 +68,7 @@ public class Operation {
     }
 
     /**
+     * Append the debit
      * @param builder : The string builder
      */
     private void appendDebitTo(StringBuilder builder) {
@@ -73,6 +78,7 @@ public class Operation {
     }
 
     /**
+     * Append the credit
      * @param builder / The string builder
      */
     private void appendCreditTo(StringBuilder builder) {
@@ -90,6 +96,7 @@ public class Operation {
     }
 
     /**
+     * Append the date
      * @param builder : The string builder
      */
     private void appendDateTo(StringBuilder builder) {
