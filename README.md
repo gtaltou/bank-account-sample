@@ -10,7 +10,7 @@ Personal bank account experience
 
 **Frameworks and IDE used for this application :**
 
-- **JAVA 8**  FOR back-end application development
+- **JAVA 8**  application development
 - **IntelliJ IDEA 2020.1** for development
 - **Junit for unit tests**
 
