@@ -1,21 +1,3 @@
-# bank-account-sample
-
-Personal bank account experience
-
-**Requirements :**
-
-- Deposit and Withdrawal
-- Account statement (date, amount, balance)
-- Statement printing
-
-**Frameworks and IDE used for this application :**
-
-- **JAVA 8**  FOR back-end application development
-- **IntelliJ IDEA 2020.1** for development
-- **Junit for unit tests**
-
-**Test:**
-
 Given: A customer makes
 
            a deposit    of 3000 $ on 01-01-2021
